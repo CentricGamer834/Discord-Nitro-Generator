@@ -10,3 +10,5 @@ const randomCode = (length = 16) =>
 
 const generate = (amount = 1) =>
     Array.from({ length: amount }, () => `https://discord.com/gifts/${randomCode()}`).join("\n");
+
+console.log(generate(10))
